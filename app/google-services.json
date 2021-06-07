@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "666454567607",
+    "project_id": "foolen-30549",
+    "storage_bucket": "foolen-30549.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666454567607:android:a6a43f58e2e18bbf89bb32",
+        "android_client_info": {
+          "package_name": "com.waga.foolenapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666454567607-i80k9914bfa5hnk2hkrat6iqg6nbb4el.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.waga.foolenapp",
+            "certificate_hash": "766ebcb5805505699dea504b63f4b336e561ba18"
+          }
+        },
+        {
+          "client_id": "666454567607-17gddeeisq4ajc3cvr7v6f4nj2qrgh7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzCSMs6xG2jf1MtqMlR76RkOhQPukX6k0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666454567607-17gddeeisq4ajc3cvr7v6f4nj2qrgh7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
