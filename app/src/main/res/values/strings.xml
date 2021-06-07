@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Foolen App</string>
+    <string name="app_logo">app_logo</string>
+    <string name="message_de_bienvenue">Bienvenue sur Foolen APP</string>
+    <string name="register_resource">S\'inscrire et accepter</string>
+    <string name="login_resource">Se connecter</string>
+</resources>
