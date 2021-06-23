@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@drawable/rectangle_2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/profile_detail_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ellipse_7"
+            android:src="@drawable/icon_material_person">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/money_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_13"
+            android:text="1000"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:drawableEnd="@drawable/icon_awesome_money_bill">
+        </TextView>
+
+        <TextView
+            android:id="@+id/coin_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_14"
+            android:text="1000"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginLeft="190dp"
+            android:drawableStart="@drawable/icon_awesome_coins">
+        </TextView>
+        <ImageView
+            android:id="@+id/add_bet_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_material_person_add"
+            android:layout_alignParentRight="true">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="80dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="pub orange"
+                android:src="@drawable/pub_orange1">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        
+    </ScrollView>
+</LinearLayout>

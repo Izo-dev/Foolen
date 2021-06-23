@@ -8,25 +8,107 @@
     android:background="@drawable/back_ground">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_logo"
         android:src="@drawable/fooolen"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textview.MaterialTextView
+    <TextView
+        android:id="@+id/login_screen_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enregistrer votre numero"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="28dp"
+        android:text="@string/register_title_ressource"
+        android:textColor="@color/maroon"
+        android:textSize="30dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/full_name_ressource"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_screen_text" />
+
+    <EditText
+        android:id="@+id/pseudo_id"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/pseudo_input_ressource"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/mail_id"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/email_input_ressource"
+        app:layout_constraintEnd_toEndOf="@+id/pseudo_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pseudo_id"
+        app:layout_constraintTop_toBottomOf="@+id/pseudo_id" />
+
+
+    <EditText
+        android:id="@+id/phone_id"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        android:hint="@string/phone_input_ressource"
+        app:layout_constraintEnd_toEndOf="@+id/mail_id"
+        app:layout_constraintStart_toStartOf="@+id/mail_id"
+        app:layout_constraintTop_toBottomOf="@+id/mail_id" />
+
+    <EditText
+        android:id="@+id/country_id"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/country_input_ressource"
+        app:layout_constraintEnd_toEndOf="@+id/phone_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phone_id"
+        app:layout_constraintTop_toBottomOf="@+id/phone_id"/>
+
+
+    <EditText
+        android:id="@+id/password_id"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_input_ressource"
+        app:layout_constraintEnd_toEndOf="@+id/country_id"
+        app:layout_constraintStart_toStartOf="@+id/country_id"
+        app:layout_constraintTop_toBottomOf="@+id/country_id" />
+
+    <Button
+        android:id="@+id/login_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_validation_text_ressource"
+        app:backgroundTint="@color/green"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/password_id"
+        app:layout_constraintTop_toBottomOf="@+id/password_id" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

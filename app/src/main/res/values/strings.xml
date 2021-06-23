@@ -4,4 +4,12 @@
     <string name="message_de_bienvenue">Bienvenue sur Foolen APP</string>
     <string name="register_resource">S\'inscrire et accepter</string>
     <string name="login_resource">Se connecter</string>
+    <string name="full_name_ressource">Nom complet</string>
+    <string name="phone_input_ressource">\'Telephone\'</string>
+    <string name="email_input_ressource">E-mail</string>
+    <string name="pseudo_input_ressource">Pseudo</string>
+    <string name="password_input_ressource">Mot de passe</string>
+    <string name="country_input_ressource">Pays</string>
+    <string name="login_validation_text_ressource">Valider</string>
+    <string name="register_title_ressource">S\'INSCRIRE</string>
 </resources>
