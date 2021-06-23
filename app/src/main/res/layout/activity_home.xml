@@ -17,6 +17,7 @@
             android:id="@+id/profile_detail_id"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:contentDescription="profil icon"
             android:background="@drawable/ellipse_7"
             android:src="@drawable/icon_material_person">
         </ImageView>
@@ -48,6 +49,7 @@
             android:id="@+id/add_bet_id"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:contentDescription="add icon"
             android:src="@drawable/icon_material_person_add"
             android:layout_alignParentRight="true">
         </ImageView>
@@ -58,18 +60,144 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp">
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="80dp">
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:contentDescription="pub orange"
-                android:src="@drawable/pub_orange1">
-            </ImageView>
-        </androidx.cardview.widget.CardView>
-        
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="pub orange"
+                        android:src="@drawable/pub_orange1">
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableStart="@drawable/ic_games_foreground"
+                    android:gravity="center"
+                    android:text="@string/all_games_title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp">
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_1_id"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="30dp"
+                        android:elevation="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:onClick="launchDahalo">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="Dahalo"
+                            android:src="@drawable/dahalo"></ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_2_id"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="30dp"
+                        android:elevation="30dp"
+                        android:layout_alignParentRight="true">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="African heroes"
+                            android:src="@drawable/aheroes">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_3_id"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="30dp"
+                        android:elevation="30dp"
+                        android:layout_alignParentLeft="true">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="Heroes"
+                            android:src="@drawable/heroes">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_4_id"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="30dp"
+                        android:elevation="30dp"
+                        android:layout_alignParentRight="true">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="African heroes"
+                            android:src="@drawable/aheroes">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_5_id"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="30dp"
+                        android:elevation="30dp"
+                        android:layout_alignParentLeft="true">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="Dahalo"
+                            android:src="@drawable/dahalo">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_6_id"
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="30dp"
+                        android:elevation="30dp"
+                        android:layout_alignParentRight="true">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="African heroes"
+                            android:src="@drawable/aheroes">
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </LinearLayout>
+
     </ScrollView>
 </LinearLayout>

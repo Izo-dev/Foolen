@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void starLogin(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 }

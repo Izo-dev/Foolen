@@ -12,4 +12,5 @@
     <string name="country_input_ressource">Pays</string>
     <string name="login_validation_text_ressource">Valider</string>
     <string name="register_title_ressource">S\'INSCRIRE</string>
+    <string name="all_games_title">Tous les jeux</string>
 </resources>
