@@ -3,22 +3,14 @@ package com.waga.foolenapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
 
-public class HomeActivity extends AppCompatActivity {
+public class LoginsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_logins);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-    }
-
-    public void showProfile(View view) {
-    }
-
-
-    public void launchCard(View view) {
     }
 }

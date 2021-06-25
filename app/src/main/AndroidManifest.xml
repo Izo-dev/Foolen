@@ -9,28 +9,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoolenApp">
-        <activity android:name=".HomeActivity"
-            android:label = "Home"
-            android:parentActivityName=".MainActivity">
+        <activity android:name=".SignupActivity3"
+            android:label="Signup"
+            android:parentActivityName=".SignupActivity2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.waga.foolenapp.MainActivity" />></activity>
-        <activity android:name=".LoginActivity"
-            android:label = "Login"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.waga.foolenapp.MainActivity" />
+                android:value="com.waga.foolenapp.SignupActivity2" />
         </activity>
-        <activity android:name=".RegisterActivity"
-            android:label = "Register"
+        <activity android:name=".SignupActivity2"
+            android:label="Signup"
+            android:parentActivityName=".SignupActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.waga.foolenapp.SignupActivity" />
+        </activity>
+        <activity android:name=".SignupActivity"
+            android:label="Signup"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.waga.foolenapp.MainActivity" />
+                android:value="com.waga.foolenapp.MainActivity" />
+        </activity>
+        <activity android:name=".LoginsActivity"
+            android:label="Home"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.waga.foolenapp.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.waga.foolenapp.MainActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

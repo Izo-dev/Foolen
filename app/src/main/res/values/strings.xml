@@ -5,7 +5,7 @@
     <string name="register_resource">S\'inscrire et accepter</string>
     <string name="login_resource">Se connecter</string>
     <string name="full_name_ressource">Nom complet</string>
-    <string name="phone_input_ressource">\'Telephone\'</string>
+    <string name="phone_input_ressource">Telephone</string>
     <string name="email_input_ressource">E-mail</string>
     <string name="pseudo_input_ressource">Pseudo</string>
     <string name="password_input_ressource">Mot de passe</string>
@@ -13,4 +13,11 @@
     <string name="login_validation_text_ressource">Valider</string>
     <string name="register_title_ressource">S\'INSCRIRE</string>
     <string name="all_games_title">Tous les jeux</string>
+    <string name="money_amount_ressource">1000</string>
+    <string name="coin_amount_ressource">1000</string>
+    <string name="login">Login</string>
+    <string name="remember_text_ressource">Se souvenir de moi</string>
+    <string name="forgotten_pwd">Mote de passe oublié?</string>
+    <string name="create_account">creer un compte</string>
+    <string name="next">Suivant</string>
 </resources>
