@@ -29,18 +29,19 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, SignupActivity.class);
 
-        Pair pairs[] = new Pair[1];
+        /*Pair pairs[] = new Pair[1];
         pairs[0] = new Pair<View, String>(mRegister, "transition_login");
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
             ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(this, pairs);
             startActivity(intent, options.toBundle());
         }
+        startActivity(intent);*/
         startActivity(intent);
     }
 
     public void starLogin(View view) {
-        Intent intent = new Intent(this, LoginsActivity.class);
+        Intent intent = new Intent(this, OtpActivity.class);
 
         startActivity(intent);
     }

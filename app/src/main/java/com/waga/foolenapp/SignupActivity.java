@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Pair;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         mSBackBtn = findViewById(R.id.signup_back_btn);
         mSNextBtn = findViewById(R.id.signup_next_btn);
         mSLoginBtn = findViewById(R.id.signup_login_btn);
@@ -32,7 +34,7 @@ public class SignupActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SignupActivity2.class);
 
         //Transition
-        Pair pairs[] = new Pair[4];
+        /*Pair pairs[] = new Pair[4];
 
         pairs[0] = new Pair<View, String>(mSBackBtn, "transition_back_btn");
         pairs[1] = new Pair<View, String>(mSTtitleText, "transition_signup_title");
@@ -46,7 +48,14 @@ public class SignupActivity extends AppCompatActivity {
 
         else {
             startActivity(intent);
-        }
+        }*/
+        startActivity(intent);
 
+    }
+
+    public void goLoginActivty(View view) {
+
+        Intent intent = new Intent(this, LoginsActivity.class);
+        startActivity(intent);
     }
 }
