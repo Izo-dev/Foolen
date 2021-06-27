@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoolenApp">
-        <activity android:name=".MakeSelectionActivity"></activity>
+        <activity android:name=".ResetPassSuccesActivity"></activity>
+        <activity android:name=".SetNewPwdActivity" />
+        <activity android:name=".MakeSelectionActivity" />
         <activity android:name=".ForgetPasswordActivity" />
         <activity
             android:name=".OtpActivity"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/top_gaming_nav"
+        android:title="Gaming">
+    </item>
+    <item android:id="@+id/top_elec_nav"
+        android:title="Electronique">
+    </item>
+    <item android:id="@+id/top_comput_nav"
+        android:title="Computing">
+    </item>
+    <item android:id="@+id/top_book_nv"
+        android:title="Books">
+    </item>
+</menu>

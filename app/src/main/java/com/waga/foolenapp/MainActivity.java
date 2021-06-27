@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void starRegister(View view) {
 
-        Intent intent = new Intent(this, SignupActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
 
         /*Pair pairs[] = new Pair[1];
         pairs[0] = new Pair<View, String>(mRegister, "transition_login");
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void starLogin(View view) {
-        Intent intent = new Intent(this, OtpActivity.class);
+        Intent intent = new Intent(this, LoginsActivity.class);
 
         startActivity(intent);
     }

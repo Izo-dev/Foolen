@@ -39,6 +39,7 @@
             android:orientation="vertical">
 
             <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_holder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -48,6 +49,7 @@
                 app:ccp_showFullName="true"
                 android:background="@drawable/black_border"/>
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/phone_input_ressource"
@@ -70,7 +72,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/signup_next_btn"
+            android:id="@+id/signup_next_btn3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/green"
