@@ -14,6 +14,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/close_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="close button"
@@ -29,7 +30,8 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_gravity="center"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:fontFamily="@font/verdana"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,7 +42,8 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_gravity="center"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:fontFamily="@font/verdana"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -50,9 +53,11 @@
             android:textColor="@color/black"
             android:layout_gravity="center"
             android:textAlignment="center"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/verdana"/>
 
         <com.chaos.view.PinView
+            android:id="@+id/pin_views"
             style="@style/PinWidget.PinView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,20 +66,25 @@
             android:cursorVisible="true"
             android:inputType="number"
             app:cursorColor="@color/black"
-            app:hideLineWhenFilled="true"
+            app:hideLineWhenFilled="false"
             app:itemCount="6"
             app:itemHeight="50dp"
             app:itemRadius="5dp"
             app:itemWidth="50dp"
-            app:lineColor="@color/black" />
+            app:lineColor="@color/black"
+            android:fontFamily="@font/verdana"/>
 
         <Button
-            android:layout_width="match_parent"
+            android:id="@+id/verif_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="verifier"
+            android:onClick="verifierCode"
             android:textColor="@color/white"
-            android:background="@color/maroon"
-            android:layout_marginTop="20dp"/>
+            android:background="@drawable/rectangle_99"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/verdana"/>
     </LinearLayout>
 
 </ScrollView>

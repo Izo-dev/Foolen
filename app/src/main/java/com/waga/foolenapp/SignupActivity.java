@@ -71,7 +71,10 @@ public class SignupActivity extends AppCompatActivity {
         else {
             startActivity(intent);
         }*/
-        Toast.makeText(this, "intent"+intent, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "intent"+fullName, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "intent"+userName, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "intent"+email, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "intent"+password, Toast.LENGTH_SHORT).show();
         startActivity(intent);
 
     }
@@ -143,15 +146,15 @@ public class SignupActivity extends AppCompatActivity {
         }
 
     }
-    /*private boolean validatePassword(){
+    private boolean validatePassword(){
 
         String field = mPassword.getEditText().getText().toString().trim();
         String checkPassword = "^" +
-                //"(?=.*[0-9])" +         //at least 1 digit
-                //"(?=.*[a-z])" +         //at least 1 lower case letter
-                //"(?=.*[A-Z])" +         //at least 1 upper case letter
+                "(?=.*[0-9])" +         //at least 1 digit
+                "(?=.*[a-z])" +         //at least 1 lower case letter
+                "(?=.*[A-Z])" +         //at least 1 upper case letter
                 "(?=.*[a-zA-Z])" +      //any letter
-                //"(?=.*[@#$%^&+=])" +    //at least 1 special character
+                "(?=.*[@#$%^&+=])" +    //at least 1 special character
                 "(?=S+$)" +           //no white spaces
                 ".{4,}" +               //at least 4 characters
                 "$";
@@ -169,5 +172,5 @@ public class SignupActivity extends AppCompatActivity {
             mPassword.setEnabled(false);
             return true;
         }
-    }*/
+    }
 }

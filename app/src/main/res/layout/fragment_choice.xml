@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChoiceFragment"
+    android:background="@drawable/home_bg">
+
+    <RelativeLayout
+        android:id="@+id/aurion_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aurion_bg">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/aurion_bg">
+
+        <ImageView
+            android:id="@+id/profile_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/groupe_7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_id"
+            android:text="ID:"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/invite_btn1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Inviter"
+            android:background="@drawable/rectangle_86"
+            android:layout_below="@id/user_id"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="20sp" />
+
+        <Button
+            android:id="@+id/demand_btn1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Demander"
+            android:background="@drawable/rectangle_96"
+            android:layout_below="@id/invite_btn1"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="20sp" />
+
+        <Button
+            android:id="@+id/rechercher_btn1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Rechercher"
+            android:background="@drawable/rectangle_87"
+            android:layout_below="@id/demand_btn1"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="20sp" />
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/bottom_menu"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            app:cnb_menuResource="@menu/bottom_nav_menu"
+            android:background="@drawable/rectangle_11"
+            app:cnb_orientationMode="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:elevation="8dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

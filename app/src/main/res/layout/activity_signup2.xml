@@ -26,11 +26,11 @@
             android:layout_height="wrap_content"
             android:text="@string/create_account"
             android:textAllCaps="true"
-            android:textSize="40sp"
+            android:textSize="36sp"
             android:layout_marginTop="20dp"
             android:textColor="@color/maroon"
-            android:textStyle="bold"
-            android:transitionName="transition_signup_title"/>
+            android:transitionName="transition_signup_title"
+            android:fontFamily="@font/verdana"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +43,8 @@
                 android:layout_height="wrap_content"
                 android:text="Sexe"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:fontFamily="@font/verdana"/>
 
             <RadioGroup
                 android:id="@+id/sex_id"
@@ -54,14 +55,18 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/male_sex_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Homme" />
+                    android:text="Homme"
+                    android:fontFamily="@font/verdana"/>
 
                 <RadioButton
+                    android:id="@+id/female_sex_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Femme" />
+                    android:text="Femme"
+                    android:fontFamily="@font/verdana"/>
             </RadioGroup>
 
             <View
@@ -76,7 +81,8 @@
                 android:layout_height="wrap_content"
                 android:text="Age"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:fontFamily="@font/verdana"/>
 
             <DatePicker
                 android:id="@+id/signup_date_picker"
@@ -90,26 +96,30 @@
 
         <Button
             android:id="@+id/signup_next_btn2"
-            android:layout_width="match_parent"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:background="@color/green"
-            android:text="@string/next"
-            android:onClick="goNextSignupScreen"
-            android:textColor="@color/white"
             android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_99"
             android:elevation="5dp"
-            android:transitionName="transition_next_btn"/>
+            android:onClick="goNextSignupScreen"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:transitionName="transition_next_btn"
+            android:layout_gravity="center"
+            android:fontFamily="@font/verdana"/>
 
         <Button
             android:id="@+id/signup_login_btn"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00000000"
             android:text="@string/login"
             android:textColor="@color/black"
             android:layout_marginTop="20dp"
             android:elevation="5dp"
-            android:transitionName="transition_login_btn"/>
+            android:transitionName="transition_login_btn"
+            android:layout_gravity="center"
+            android:fontFamily="@font/verdana"/>
     </LinearLayout>
 
 </ScrollView>

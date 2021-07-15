@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/money_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_13"
+            android:text="@string/money_amount_ressource"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:drawableEnd="@drawable/icon_awesome_money_bill"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/coin_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_14"
+            android:text="@string/coin_amount_ressource"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/icon_awesome_coins">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_alignParentTop="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/profile_img_id"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:src="@drawable/groupe_7"
+                        android:contentDescription="photo du profile"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="100dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID:"
+                            android:layout_marginTop="100dp"
+                            android:paddingRight="150dp"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Telephone:"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pays:"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/edit_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_awesome_user_edit"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="195dp"
+                        android:layout_marginRight="70dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/games_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edit_btn"
+                        android:orientation="vertical"
+                        android:background="@drawable/groupe_29"
+                        android:layout_marginTop="50dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/groupe_39"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_alignParentLeft="true"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/groupe_40"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_alignParentRight="true"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/groupe_41"
+                            android:layout_marginTop="30dp"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/coins_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/games_id"
+                        android:orientation="vertical"
+                        android:background="@drawable/groupe_33c">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/groupe_38"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_alignParentLeft="true"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/groupe_38"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_alignParentRight="true"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/groupe_38"
+                            android:layout_marginTop="30dp"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/coupon_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/coins_id"
+                        android:orientation="vertical"
+                        android:background="@drawable/groupe_31">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/groupe_42"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="12.5dp"
+                            android:layout_alignParentLeft="true"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/groupe_44"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="12.5dp"
+                            android:layout_alignParentRight="true"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/groupe_43"
+                            android:layout_marginTop="12.5dp"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/bottom_menu"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rectangle_11"
+            app:cnb_orientationMode="horizontal"
+            android:layout_alignParentBottom="true"
+            android:elevation="8dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

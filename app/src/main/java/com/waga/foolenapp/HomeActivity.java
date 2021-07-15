@@ -30,13 +30,13 @@ public class HomeActivity extends AppCompatActivity {
             public void onItemSelected(int i) {
                 Fragment fragment = null;
                 switch (i){
-                    case R.id.bottom_dash_nav:
+                    case R.id.home_nav:
                         fragment = new HomeFragment();
                         break;
-                    case R.id.bottom_store_nav:
+                    case R.id.store_nav:
                         fragment = new StoreFragment();
                         break;
-                    case R.id.bottom_wallet_nav:
+                    case R.id.wallet_nav:
                         fragment = new PaymentFragment();
                         break;
                 }

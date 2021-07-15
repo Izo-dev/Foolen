@@ -1,12 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PaymentFragment"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/payment_top"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/groupe_de_masques_09">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/groupe_7"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mon Portefeuille"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/verdana"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000 FCFA"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/verdana"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="500 Afc"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/verdana"/>
 
 
-    
+                    </LinearLayout>
 
-</LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/payment_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/payment_top"
+                    android:layout_marginTop="-20dp"
+                    android:background="@drawable/rectangle_76"
+                    android:elevation="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Depot"
+                        android:background="@drawable/rectangle_51"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="95dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/verdana"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Retrait"
+                        android:background="#00000000"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="95dp"
+                        android:fontFamily="@font/verdana"/>
+                    <ImageView
+
+                        android:layout_width="380dp"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="-14dp"
+                        android:src="@drawable/bouton_02" />
+
+                </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/payment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mes transations"
+            android:layout_below="@id/payment_sec"
+            android:textSize="26sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/verdana"/>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trac__11"
+            android:layout_below="@id/payment_title"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/transaction_id1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_77"
+            android:layout_below="@id/transaction_id"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/depot_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retrait"
+                android:textColor="@color/red_foolen"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/verdana"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14/0/21"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/depot_tv1"
+                android:fontFamily="@font/verdana"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-1000 Fcfa"
+                android:textColor="@color/red_foolen"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/verdana"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/transaction_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_77"
+            android:layout_below="@+id/view_line"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/depot_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Depot"
+                android:textColor="@color/green"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/verdana"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14/0/21"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/depot_tv2"
+                android:fontFamily="@font/verdana"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000 Fcfa"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/verdana"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -27,8 +27,8 @@ public class SignupActivity3 extends AppCompatActivity {
         mPhone = findViewById(R.id.signup_phone);
 
         Intent intent = getIntent();
-        mFullName = intent.getStringExtra("fullname");
-        mUserName = intent.getStringExtra("username");
+        mFullName = intent.getStringExtra("fullName");
+        mUserName = intent.getStringExtra("userName");
         mEmail = intent.getStringExtra("email");
         mPassword = intent.getStringExtra("password");
         mSex = intent.getStringExtra("sex");
@@ -41,18 +41,29 @@ public class SignupActivity3 extends AppCompatActivity {
         //Validation
 
         Intent intent = new Intent(this, OtpActivity.class);
-
-        intent.putExtra("fullname", mFullName);
-        intent.putExtra("username", mUserName);
-        intent.putExtra("email", mEmail);
-        intent.putExtra("password", mPassword);
-        intent.putExtra("sex", mSex);
-        intent.putExtra("date", mDate);
-        String countryCodePicker = mCountryCodePicker.getSelectedCountryCodeWithPlus().toString();
-        intent.putExtra("code", countryCodePicker);
+        String countryCodePicker = mCountryCodePicker.getFullNumberWithPlus().toString();
         String phone = mPhone.getEditText().getText().toString();
-        intent.putExtra("phone", phone);
-        Toast.makeText(this, "infos"+intent, Toast.LENGTH_SHORT).show();
+        String tel = countryCodePicker + phone;
+        String fullName = mFullName;
+        String userName = mUserName;
+        String email = mEmail;
+        String password = mPassword;
+        String sex = mSex;
+        String date = mDate;
+        intent.putExtra("fullname", fullName);
+        intent.putExtra("username", userName);
+        intent.putExtra("email", email);
+        intent.putExtra("password", password);
+        intent.putExtra("sex", sex);
+        intent.putExtra("date", date);
+        intent.putExtra("phone", tel);
+        Toast.makeText(this, "Fullname :"+fullName, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Username :"+userName, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Email :"+email, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Password :"+password, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Sex :"+sex, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Age :"+date, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Telephone :"+tel, Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }
 }

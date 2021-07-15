@@ -21,4 +21,6 @@
     <string name="create_account">creer un compte</string>
     <string name="next">Suivant</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

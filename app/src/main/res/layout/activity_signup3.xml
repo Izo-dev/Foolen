@@ -26,11 +26,12 @@
             android:layout_height="wrap_content"
             android:text="@string/create_account"
             android:textAllCaps="true"
-            android:textSize="40sp"
+            android:textSize="36sp"
             android:layout_marginTop="20dp"
             android:textColor="@color/maroon"
             android:textStyle="bold"
-            android:transitionName="transition_signup_title"/>
+            android:transitionName="transition_signup_title"
+            android:fontFamily="@font/verdana"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,6 +53,10 @@
                 android:id="@+id/signup_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusBottomEnd="30dp"
                 android:hint="@string/phone_input_ressource"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
@@ -59,40 +64,44 @@
                 app:boxStrokeWidthFocused="2dp"
                 app:startIconTint="@color/black"
                 app:hintTextColor="@color/black"
-                android:textColorHint="@color/black"
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="phone"/>
+                    android:inputType="phone"
+                    android:fontFamily="@font/verdana"/>
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
 
         <Button
             android:id="@+id/signup_next_btn3"
-            android:layout_width="match_parent"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:background="@color/green"
+            android:background="@drawable/rectangle_99"
             android:text="@string/next"
             android:onClick="goNextSignupScreen"
             android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:elevation="5dp"
-            android:transitionName="transition_next_btn"/>
+            android:transitionName="transition_next_btn"
+            android:layout_gravity="center"
+            android:fontFamily="@font/verdana"/>
 
         <Button
             android:id="@+id/signup_login_btn"
-            android:layout_width="match_parent"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:background="#00000000"
+            android:elevation="5dp"
             android:text="@string/login"
             android:textColor="@color/black"
-            android:layout_marginTop="20dp"
-            android:elevation="5dp"
-            android:transitionName="transition_login_btn"/>
+            android:transitionName="transition_login_btn"
+            android:fontFamily="@font/verdana"/>
     </LinearLayout>
 
 </ScrollView>

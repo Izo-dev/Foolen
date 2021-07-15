@@ -7,16 +7,56 @@
     tools:context=".StoreFragment"
     android:background="@color/white">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:orientation="vertical">
 
-        <ImageView
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/groupe_de_masques_9"/>
+            android:background="@drawable/groupe_de_masques_9">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_alignParentTop="true">
+
+
+
+                <TextView
+                    android:id="@+id/money_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_13"
+                    android:text="@string/money_amount_ressource"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="85dp"
+                    android:drawableEnd="@drawable/icon_awesome_money_bill">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/coin_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_14"
+                    android:text="@string/coin_amount_ressource"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="170dp"
+                    android:drawableStart="@drawable/icon_awesome_coins">
+                </TextView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="350dp"
@@ -26,7 +66,7 @@
             app:boxCornerRadiusBottomStart="30dp"
             app:boxCornerRadiusTopEnd="30dp"
             app:boxCornerRadiusTopStart="30dp"
-            android:hint="rechercher un produit"
+            android:hint="Rechercher un produit"
             app:endIconDrawable="@drawable/ic_baseline_lock_24"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
@@ -34,7 +74,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/verdana"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <ScrollView
@@ -47,16 +88,6 @@
                 android:orientation="vertical">
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:text="Tous les produits"
-                    android:textColor="@color/maroon"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="20dp">
-                </TextView>
 
                 <com.ismaeldivita.chipnavigation.ChipNavigationBar
                     android:layout_width="match_parent"
@@ -70,53 +101,150 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card_1_id"
-                        android:layout_width="160dp"
+                        android:layout_width="140dp"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="30dp"
-                        android:elevation="30dp"
+                        app:cardCornerRadius="20dp"
+                        android:elevation="8dp"
                         android:layout_alignParentLeft="true">
 
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:contentDescription="Dahalo"
-                            android:src="@drawable/mouse"></ImageView>
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="Dahalo"
+                                android:src="@drawable/mouse"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lorem Ipsum"
+                                android:layout_marginTop="-60dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="lorem ipsum ipsum
+                                \nDolore es"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200 Africoins"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/maroon"/>
+
+                        </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card_2_id"
-                        android:layout_width="160dp"
+                        android:layout_width="140dp"
                         android:layout_height="wrap_content"
-                        app:cardCornerRadius="30dp"
-                        android:elevation="30dp"
+                        app:cardCornerRadius="20dp"
+                        android:elevation="8dp"
                         android:layout_alignParentRight="true">
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:contentDescription="African heroes"
-                            android:src="@drawable/manette">
-                        </ImageView>
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="African heroes"
+                                android:src="@drawable/manette">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lorem Ipsum"
+                                android:layout_marginTop="-60dp"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="lorem ipsum ipsum
+                                \nDolore es"
+                                android:layout_marginTop="5dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200 Africoins"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/maroon"/>
+
+                        </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="40dp">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card_3_id"
-                        android:layout_width="160dp"
+                        android:layout_width="140dp"
                         android:layout_height="wrap_content"
                         app:cardCornerRadius="30dp"
-                        android:elevation="30dp"
+                        android:elevation="8dp"
                         android:layout_alignParentLeft="true">
-                        <ImageView
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:contentDescription="Heroes"
-                            android:src="@drawable/manette">
-                        </ImageView>
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="African heroes"
+                                android:src="@drawable/manette">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lorem Ipsum"
+                                android:layout_marginTop="-60dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="lorem ipsum ipsum
+                                \nDolore es"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200 Africoins"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/maroon"/>
+
+                        </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -126,19 +254,51 @@
                         app:cardCornerRadius="30dp"
                         android:elevation="30dp"
                         android:layout_alignParentRight="true">
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:contentDescription="African heroes"
-                            android:src="@drawable/mouse">
-                        </ImageView>
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="African heroes"
+                                android:src="@drawable/mouse">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lorem Ipsum"
+                                android:layout_marginTop="-60dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="lorem ipsum ipsum
+                                \nDolore es"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200 Africoins"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/maroon"/>
+
+                        </LinearLayout>
                     </androidx.cardview.widget.CardView>
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="40dp">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card_5_id"
@@ -147,12 +307,44 @@
                         app:cardCornerRadius="30dp"
                         android:elevation="30dp"
                         android:layout_alignParentLeft="true">
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:contentDescription="Dahalo"
-                            android:src="@drawable/mouse">
-                        </ImageView>
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="African heroes"
+                                android:src="@drawable/mouse">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lorem Ipsum"
+                                android:layout_marginTop="-60dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="lorem ipsum ipsum
+                                \nDolore es"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200 Africoins"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/maroon"/>
+
+                        </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -162,12 +354,44 @@
                         app:cardCornerRadius="30dp"
                         android:elevation="30dp"
                         android:layout_alignParentRight="true">
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:contentDescription="African heroes"
-                            android:src="@drawable/manette">
-                        </ImageView>
+                            android:orientation="vertical"
+                            android:layout_margin="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:contentDescription="African heroes"
+                                android:src="@drawable/manette">
+                            </ImageView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lorem Ipsum"
+                                android:layout_marginTop="-60dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="lorem ipsum ipsum
+                                \nDolore es"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/verdana"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200 Africoins"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/maroon" />
+
+                        </LinearLayout>
                     </androidx.cardview.widget.CardView>
                 </RelativeLayout>
             </LinearLayout>
